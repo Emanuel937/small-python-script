@@ -1,0 +1,12 @@
+<script>
+  const ws = new WebSocket("ws://localhost:8000/ws");
+
+  ws.onopen = () => {
+    alert("Connecté");
+    ws.send("Bonjour serveur !");
+  };
+
+  ws.onmessage = event => alert("Serveur: " + event.data);
+  ws.onclose = () => alert("Déconnecté");
+</script>
+
