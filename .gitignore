@@ -1,7 +1,8 @@
 # Ignore all Python virtual environments
 **/env/
 **/venv/
-**/*.*
+**/data/
+
 
 # Ignore all bin directories
 **/bin/
